@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: url(https://cdn.discordapp.com/attachments/1179837611183984830/1190659117715566735/th.png?ex=65a29ab7&is=659025b7&hm=ffd4e6ac5778af5aad465e82b284e3fea955a447a571ed310090ef505842c0ca&);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: width 0.3s ease;
+}
+
+.search-bar input {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-expand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    transition: width 0.3s ease;
+    background-color: #f0f0f0;
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.app {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+.app-details {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.app-details img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .app {
+        width: 130%;
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    .app-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+.app {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    align-items: center; /* محاذاة المحتوى في المنتصف */
+}
+
+.app img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.app p {
+    flex-grow: 1; /* يجعل النص يمتد ليملأ المساحة المتبقية */
+    margin: 0; /* إزالة هامش النص الافتراضي */
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+.app-details img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .app {
+        width: 90%; /* تقليل العرض لتناسب الشاشات الصغيرة */
+        height: auto; /* ارتفاع تلقائي */
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.app {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app img {
+    width: 150px; /* حجم الصورة في حالة العرض العادي */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.app p {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .app {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .app img {
+        width: 100%; /* حجم الصورة في حالة العرض الصغير (جوال) */
+        height: auto;
+    }
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.backb{
+    color: #000000;
+    text-decoration: none;
+    border: #000000 2px solid;
+    padding: 5px 15px ;
+    border-radius: 10px ;
+    line-height: 2m ;
+}
+
+.downloadb{
+    color: #000000;
+    text-decoration: none;
+    border: #000000 2px solid;
+    padding: 5px 15px ;
+    border-radius: 10px ;
+    line-height: 2m ;
+}
+
+.t1{
+    color: #000000;
+    text-decoration: none;
+    border: #000000 2px solid;
+    padding: 5px 15px ;
+    border-radius: 10px ;
+    line-height: 2m ;
+}
